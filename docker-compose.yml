@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  angular-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "880:80"
+    container_name: angular_rickandmorty
